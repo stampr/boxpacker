@@ -5,3 +5,4 @@ require('babel-register')({
   only: /\b(src|lodash\-es|async\-es)\b/,
 });
 
+require('reify');

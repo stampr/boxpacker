@@ -10,9 +10,10 @@
     "lint:coverage": "npm run lint && npm run coverage",
     "lint": "eslint ./src",
     "pretest": "npm run build",
-    "test": "mocha -r ./test/lib/helper test"
+    "test": "npm run lint && mocha -r ./test/lib/helper test"
   },
   "dependencies": {
+    "heap": "^0.2.6"
   },
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.18.0",
@@ -25,6 +26,7 @@
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
     "nyc": "^10.1.2",
+    "reify": "^0.7.5",
     "rollup": "^0.41.1",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-commonjs": "^7.0.0",

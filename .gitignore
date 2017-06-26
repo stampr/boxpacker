@@ -38,3 +38,5 @@ Thumbs.db
 
 *.orig
 
+# ignore dist for now
+dist
